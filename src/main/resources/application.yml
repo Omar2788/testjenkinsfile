@@ -1,0 +1,39 @@
+management:
+    security:
+        enabled: false
+security:
+    basic:
+        enabled: false
+    
+spring:
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: true
+    datasource:
+        url: jdbc:mysql://172.17.0.2:3306/store_management?createDatabaseIfNotExist=true
+        username: root
+        password: my-secret-pw
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+#        database: SQL_SERVER
+        open-in-view: false
+        show-sql: true 
+        hibernate:
+            ddl-auto: update
+
+         
+lang:
+    secondary: ar
+
+     
+server:
+    servlet.contextPath: /store-management
+    port: 8080
+    compression:
+        enabled: true
+        mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+        min-response-size: 1024 
+
+

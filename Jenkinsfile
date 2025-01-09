@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                powershell 'echo Build step goes here'
+                powershell 'echo Build step goes'
             }
         }
         stage('Test') {

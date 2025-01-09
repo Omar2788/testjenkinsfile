@@ -11,19 +11,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'echo Build step goes here'
+                powershell 'echo Build step goes here'
             }
         }
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'echo Test step goes here'
+                powershell 'echo Test step goes here'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
-                sh 'echo Deploy step goes here'
+                powershell 'echo Deploy step goes here'
             }
         }
     }
